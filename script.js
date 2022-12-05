@@ -5,6 +5,14 @@ const textEng = document.getElementById('text-eng');
 const numberOfMemory = document.getElementById('number');
 const newMemoryBtn = document.getElementById('new-btn');
 
+
+if (document.documentElement.clientWidth < 600) {
+    document
+        .querySelector("meta[name=viewport]")
+        .setAttribute('content', 'initial-scale=0.5', 'maximum-scale=0.5', 'width=500');
+};
+
+
 // getting new Memory onload and with button
 
 function getNewMemory() {
