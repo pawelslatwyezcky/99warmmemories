@@ -6,12 +6,11 @@ const numberOfMemory = document.getElementById('number');
 const newMemoryBtn = document.getElementById('new-btn');
 
 // getting new Memory onload and with button
-let i = 0;
 
 function getNewMemory() {
     loading();
     let getRandomNumber = Math.floor(Math.random()*allMemories.length);
-    memory.src=`/img/memory(${getRandomNumber}).jpg`
+    memory.src=`img/memory(${getRandomNumber}).jpg`
     textRus.textContent = allMemories[getRandomNumber].textrus;
     textEng.textContent = allMemories[getRandomNumber].texteng;
     if (getRandomNumber < 9) {
